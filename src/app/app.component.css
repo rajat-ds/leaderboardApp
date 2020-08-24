@@ -1,0 +1,32 @@
+.heading1{
+    text-align: center;
+}
+
+.addLeader{
+    position: absolute;
+    left:  43%;
+    font-weight: bold;
+    width: 13%;
+    height: 7%;
+}
+
+.rowMarginTop{
+    margin-top: 5%;
+    max-width: 80%;
+    margin-left: 8%;
+}
+
+.column{
+    border: solid black thin;
+    padding-bottom: 15px;
+}
+
+.nestedColumn{
+    border: solid black thin;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #F4F6F6;
+}

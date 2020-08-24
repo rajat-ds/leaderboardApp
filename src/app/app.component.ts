@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'leaderBoard';
+  arr = [1,2,3,4,5,6,6,78,2];
 }
