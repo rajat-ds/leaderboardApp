@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-
+import { Component,Inject  } from '@angular/core';
+import {MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { AddleaderComponent} from  './addleader/addleader.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'leaderBoard';
-  arr = [1,2,3,4,5,6,6,78,2];
+  arr = [1,];
+  constructor(private matDialog: MatDialog) {}
+
+  openDialog() {
+    const dialogConfig = new MatDialogConfig();
+    this.matDialog.open(AddleaderComponent, dialogConfig);
+  }
 }
