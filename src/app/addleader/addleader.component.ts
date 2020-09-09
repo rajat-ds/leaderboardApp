@@ -13,7 +13,6 @@ export class AddleaderComponent implements OnInit {
   ngOnInit(): void {
   }
   close() {
-    this.dialogRef.close();
+    this.dialogRef.close("Thanks for using me!");
   }
-
 }

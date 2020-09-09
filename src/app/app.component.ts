@@ -17,6 +17,11 @@ export class AppComponent  {
   }
   openDialog() {
     const dialogConfig = new MatDialogConfig();
-    this.matDialog.open(AddleaderComponent, dialogConfig);
+    // this.matDialog.open(AddleaderComponent, dialogConfig);
+    let dialogRef = this.matDialog.open(AddleaderComponent, dialogConfig);
+    dialogRef.afterClosed().subscribe(value => {
+      console.log(`Dialog sent: ${value}`); 
+    });
   }
+  
 }
