@@ -12,6 +12,7 @@ export class AppComponent  {
  
    title = 'leaderBoard';
    arr1 = [];
+  //  id=1;
    constructor(private matDialog: MatDialog,) {
    this.arr1.push({id:1,name:"rajat",points:23})
   }
@@ -21,6 +22,8 @@ export class AppComponent  {
     let dialogRef = this.matDialog.open(AddleaderComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(value => {
       console.log(`Dialog sent: ${value}`); 
+      console.log(value)
+      this.arr1.push({id:1,name:"rajat",points:23})
     });
   }
   
